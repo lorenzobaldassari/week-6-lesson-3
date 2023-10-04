@@ -1,0 +1,33 @@
+@mixin grid($col){
+    $a:(100/$col)-3;
+    $b:percentage($a/100);
+    
+width:$b
+}
+
+.col{
+    @include grid(3)
+}
+
+
+
+
+
+
+
+
+@mixin fadeIn($position,$time){
+    
+@keyframes inside{
+    from {position:$position;
+    opacity: 0;};
+    to {position: 0;
+    opacity: 1;}}
+    animation-name: inside;
+    animation-duration: $time;
+    animation-timing-function: linear;
+    }
+
+    .pp{
+        @include inside(100px,2s)
+    }

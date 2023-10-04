@@ -1,0 +1,41 @@
+$primary:#f4f4f4;
+$secondary:#640fc5;
+$button1: #0e6cff;
+$button2:#ff8700;
+$button3:#4caf50;
+
+body{
+    color: $primary;
+}
+
+.button1{
+    background-color: $button1;
+}
+.button2{
+    background-color: $button2;
+}
+.button3{
+    background-color: $button3;
+}
+.hero{
+    background-color: $secondary;
+}
+
+.primary{
+    color: $primary;
+}
+.secondary{
+    color: $secondary;
+}
+.third{
+    color: $button1;
+}
+.fourth{
+    color: $button2;
+}
+.fifth{
+    color: $button3;
+}
+.link-color{
+    color: rgb(0, 34, 230);
+}

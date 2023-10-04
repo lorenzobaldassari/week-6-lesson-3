@@ -1,0 +1,64 @@
+
+
+
+
+$border:(
+    1:1px solid black,
+    2:2px solid black,
+    3:3px solid black,
+    4:4px solid black,
+    5:5px solid black
+);
+
+
+@each $size,$value in $f-size{
+    .line-height-#{$size}{
+        line-height: $value;}  
+}
+@each $size,$value in $f-size{
+    .m-#{$size}{
+        margin: $value;}  
+        
+    }  
+@each $size,$value in $f-size{
+    .mx-#{$size}{
+        margin-right: $value;
+        margin-left: $value
+    }  }
+@each $size,$value in $f-size{
+    .my-#{$size}{
+        margin-top: $value;  
+        margin-bottom: $value
+ } }  
+        
+
+@each $size,$value in $f-size{
+    .p-#{$size}{
+        padding:  $value
+    }  
+        
+    }  
+@each $size,$value in $f-size{
+    .px-#{$size}{
+        padding-left:  $value;
+        padding-right:  $value
+    }  }
+
+@each $size,$value in $f-size{
+    .py-#{$size}{
+        padding-top:  $value; 
+        padding-bottom:  $value
+    }  }
+
+@each $size,$value in $width{
+    .w-#{$size}{
+        width: $value;}  
+}
+
+
+@each $size,$value in $border{
+.border-black-#{$size}{
+    border: $value;}  }
+.row{
+    flex-wrap: wrap;
+}

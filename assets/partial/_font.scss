@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+$f-size:(
+    xs : 10px,
+    s : 16px,
+    m : 20px,
+    l : 28px,
+    xl : 38px,
+    xxl : 50px,
+    xxxl:80px
+    );
+
+    $width:(
+        10 : 10%,
+        20 : 20%,
+        30 : 30%,
+        40 : 40%,
+        50 : 50%,
+        60 : 60%,
+        70 : 70%,
+        80 : 80%,
+        90 : 90%,
+        100 : 100%
+    );
+
+
+@each $size,$value in $f-size{
+    .font-size-#{$size}{
+        font-size: $value;}  
+}
+
+
+.ancor a{
+    text-decoration: none;
+    
+        
+    
+}
+.hover-scale{
+    &:hover{
+        transform: scale(1.3);
+     }
+}
+.hover-size{
+    &:hover{
+        font-size: 2em;
+     }
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+.flex{
+display: flex;
+}
+.vertical{
+    flex-direction: column;
+}
+.align-center{
+align-items: center;
+}
+.between{
+justify-content: space-between;
+}
+.justify-center{
+justify-content: center;
+}
+.around{
+    justify-content: space-around;
+}
+
+.firstImage>img{
+    border-radius:150px;
+}
+.hero{
+    height: 100%;
+}
+.hero2{
+    height: 100%;
+}
+button{
+    width:150px;
+    height: 45px;
+    font-weight: bold;
+}
+@mixin titleBig{
+    font-weight: 700;
+}
+
+h1{
+    @include titleBig()
+}
